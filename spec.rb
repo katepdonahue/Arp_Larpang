@@ -25,6 +25,10 @@ describe String do
       expect("Emma".pig_latin).to eq("Emmaay")
     end
 
+    it "should work on a sentence" do
+      expect("Hello my name is Kate.").to eq("ellohay ymay amenay isay atekay.")
+    end
+
   end
 
 end
