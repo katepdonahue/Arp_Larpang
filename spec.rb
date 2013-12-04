@@ -11,4 +11,20 @@ describe String do
 
   end
 
+  describe "#pig_latin" do
+
+    it "should take the first consonant off the beginning of the word and put it at the end followed by an ay" do
+      expect("Sarah".pig_latin).to eq("arahsay")
+    end
+
+    it "should take all consonants in a row off the beginning of the word and put them at the end followed by an ay" do
+      expect("Shoshana".pig_latin).to eq("oshanashay")
+    end
+
+    it "should not remove a vowel off the beginning of the word but still put an ay" do
+      expect("Emma".pig_latin).to eq("Emmaay")
+    end
+
+  end
+
 end
