@@ -11,7 +11,6 @@ describe String do
 
   end
 
-# think about what you want to do with capital letters
   describe "#pig_latin" do
 
     it "should take the first consonant off the beginning of the word and put it at the end followed by an ay" do
