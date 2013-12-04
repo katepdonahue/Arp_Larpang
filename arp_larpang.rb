@@ -18,9 +18,15 @@ class String
   end
 
   def pig_latin_sentence
+    words = []
     self.split(/\b/).each do |word|
-      word.pig_latin
+      if (/[^a-zA-Z]+/).match(word)
+        words << word
+      else
+        words << word.pig_latin
+      end
     end
+    words.join
   end
 
 
