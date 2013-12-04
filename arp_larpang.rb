@@ -2,7 +2,7 @@
 class String
 
   def arp
-    self.split(/(?<=[^aeiouy])(?=[aeiouy])/)
+    self.gsub(/(?<=[^aeiouy])(?=[aeiouy])/, "arp")
   end
 
 end
