@@ -35,7 +35,7 @@ describe String do
     end
 
     it "should work on a sentence" do
-      expect("Hello my name is Kate.".pig_latin_sentence).to eq("Ellohay ymay amenay isway Atekay.")
+      expect("Hello my name is Kate.".pig_latin).to eq("Ellohay ymay amenay isway Atekay.")
     end
 
   end

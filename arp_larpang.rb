@@ -6,7 +6,7 @@ class String
     # deal with corner cases: silent e's, y's as consonants etc.
   end
 
-  def pig_latin
+  def pig
     match = (/\A([Yy]?[^aeiouyAEIOUY]*)([aeiouyAEIOUY]*.*)/).match(self)
     if match[1] == ""
       "#{match[2]}way"
@@ -17,13 +17,13 @@ class String
     end
   end
 
-  def pig_latin_sentence
+  def pig_latin
     words = []
     self.split(/\b/).each do |word|
       if (/[^a-zA-Z]+/).match(word)
         words << word
       else
-        words << word.pig_latin
+        words << word.pig
       end
     end
     words.join
